@@ -1,26 +1,54 @@
 function Achievements() {
   return (
-    <section className="py-20 px-6 text-center">
+    <section id="achievements" className="py-20 px-6 text-center bg-secondary text-white">
 
-      <h2 data-aos="fade-up" className="text-3xl text-primary mb-10">
+      {/* Title */}
+      <h2 data-aos="fade-up" className="text-3xl text-primary mb-12">
         Achievements
       </h2>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      {/* Cards */}
+      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
 
-        <div data-aos="zoom-in" className="bg-[#112240] p-6 rounded-lg">
-          <h3 className="text-xl font-bold">Hackathons</h3>
-          <p className="mt-2 text-gray-400">Participated in multiple events</p>
+        {/* Paper Presentation */}
+        <div
+          data-aos="zoom-in"
+          className="bg-[#112240] p-6 rounded-xl shadow-lg hover:shadow-primary/40 hover:scale-105 transition duration-300"
+        >
+          <h3 className="text-xl font-semibold text-primary mb-3">
+            Paper Presentation
+          </h3>
+
+          <p className="text-gray-400 text-sm">
+            Presented a technical paper at Chennai Institute of Technology,
+            demonstrating concepts related to electronics and communication engineering.
+            This experience strengthened my presentation and technical articulation skills.
+          </p>
         </div>
 
-        <div data-aos="zoom-in" data-aos-delay="200" className="bg-[#112240] p-6 rounded-lg">
-          <h3 className="text-xl font-bold">Certifications</h3>
-          <p className="mt-2 text-gray-400">Completed technical courses</p>
-        </div>
+        {/* Certifications */}
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          className="bg-[#112240] p-6 rounded-xl shadow-lg hover:shadow-primary/40 hover:scale-105 transition duration-300"
+        >
+          <h3 className="text-xl font-semibold text-primary mb-3">
+            Certifications
+          </h3>
 
-        <div data-aos="zoom-in" data-aos-delay="400" className="bg-[#112240] p-6 rounded-lg">
-          <h3 className="text-xl font-bold">Awards</h3>
-          <p className="mt-2 text-gray-400">Academic & technical achievements</p>
+          <p className="text-gray-400 text-sm mb-4">
+            Completed multiple technical certifications in software development,
+            embedded systems, and electronics. Click below to view all certifications.
+          </p>
+
+          <a
+            href="https://www.linkedin.com/in/m-karthick-69585a353"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border border-primary px-4 py-2 rounded hover:bg-primary hover:text-black transition"
+          >
+            View Certificates
+          </a>
         </div>
 
       </div>
