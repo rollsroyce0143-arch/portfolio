@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Achievements from './components/Achievements';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
+import ScrollToTop from "./components/ScrollToTop";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -29,6 +30,7 @@ function App() {
       <Achievements />
       <Resume />
       <Contact />
+      <ScrollToTop />
     </div>
   );
 }
